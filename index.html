@@ -26,6 +26,7 @@
 
     <title>instagram</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imgs/instagram.png">
 </head>
@@ -39,7 +40,7 @@
         <section class="h_inner">
 
             <h1 class="logo">
-                <a href="#">
+                <a href="index.html">
                     <div class="sprite_insta_icon"></div>
                     <div>
                         <div class="sprite_write_logo"></div>
@@ -58,9 +59,10 @@
 
 
             <div class="right_icons">
-                <div class="sprite_compass_icon"></div>
-                <div class="sprite_heart_icon_outline" data-name="heartbeat"></div>
-                <div class="sprite_user_icon_outline"></div>
+                <div class="sprite_camera_icon"><a href="new_post.html"></a></div>
+                <div class="sprite_compass_icon"><a href="#"></a></div>
+                <div class="sprite_heart_icon_outline"><a href="follow.html"></a></div>
+                <div class="sprite_user_icon_outline"><a href="login.html"></a></div>
             </div>
         </section>
     </header>
@@ -460,92 +462,8 @@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
+<script src="js/insta.js"></script>
 
 
-    (function () {
-
-
-        const btn = document.querySelector('.heart_btn');
-        const header = document.querySelector('#header');
-        const side_box = document.querySelector('.side_box');
-        const contents = document.querySelector('.contents_box');
-
-
-        btn.addEventListener('click', function () {
-            this.classList.toggle('on');
-        });
-
-
-        $('.commit_field input').focus(function () {
-            $('.upload_btn').addClass('on');
-        });
-
-        $('.commit_field input').blur(function () {
-            $('.upload_btn').removeClass('on');
-        });
-
-
-        function eventHandler(e) {
-            let elem = e.target;
-
-            while (!elem.getAttribute('data-name')) {
-                elem = elem.parentNode;
-
-                if (elem.nodeName == 'BODY') {
-                    elem = null;
-                    return;
-                }
-            }
-
-            // console.log(elem.getAttribute('data-name') + 'clicked! ');
-
-            elem.classList.toggle('on');
-        }
-
-
-        function resizefunc(){
-
-            console.log(window.innerWidth);
-
-            side_box.style.left = window.innerWidth;
-
-        }
-
-        contents.addEventListener('click', eventHandler);
-
-
-        window.addEventListener('scroll', function (e) {
-
-            // console.log(this.scrollY);
-
-            if (this.scrollY >= 10) {
-                header.classList.add('on');
-                side_box.classList.add('on');
-
-
-            } else {
-                header.classList.remove('on');
-                side_box.classList.remove('on');
-            }
-
-        });
-
-        window.addEventListener('resize',resizefunc);
-
-        if (matchMedia("screen and (max-width: 1024px)").matches) {
-            // 1024px 이상에서 사용할 JavaScript
-
-
-        } else {
-            // 1024px 미만에서 사용할 JavaScript
-
-
-        }
-
-
-    })();
-
-</script>
 </body>
 </html>
