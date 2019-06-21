@@ -253,12 +253,17 @@ body {
         padding: 0 20px;
     }
 
+    #main_container .b_inner{
+        width:initial !important;
+        max-width:935px;
+    }
+
     .side_box {
         display: none;
     }
 
     .b_inner .contents_box {
-        float: none !important;
+        float: none;
     }
 
     .contents {

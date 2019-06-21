@@ -3,7 +3,7 @@
 
 
 #main_container .b_inner{
-    max-width: 935px;
+    width:935px;
     position: relative;
 }
 
@@ -223,7 +223,7 @@ input[type=text]::-ms-clear {
 
 .side_box.on{
     position: fixed;
-    left: 61%;
+    /*left: 61%;*/
     top: 80px;
 }
 
