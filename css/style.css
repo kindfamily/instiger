@@ -2,10 +2,6 @@
 
 
 
-#main_container .b_inner{
-    width:935px;
-    position: relative;
-}
 
 .b_inner .contents_box{
     float: left;
@@ -26,6 +22,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 13px 17px;
+    position: relative;
+}
+
+.contents .top .sprite_more_icon{
+    cursor: pointer;
+    padding: 5px 5px;
 }
 .user_container{
     display: flex;
@@ -54,6 +56,37 @@
     margin-bottom: 5px;
 }
 
+
+.top .more_detail{
+    position: absolute;
+    right: -60px;
+    top: 40px;
+    background:white;
+    border: 1px solid rgba(0,0,0,.0975);
+    border-radius: 3px;
+    z-index: 100;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.34);
+    /*display: none;*/
+    transform-origin: left top;
+    transform:scale(0);
+    transition:all 0.3s ;
+}
+
+.sprite_more_icon.on .more_detail{
+    /*display: block;*/
+    transform:scale(1);
+
+
+}
+
+.top .more_detail > li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.top .more_detail > li:hover{
+    background:gray;
+}
 .user_container .country{
     font-size: 12px;
 }
@@ -103,6 +136,10 @@
     animation:heart_bounce 1s linear;
 }
 
+
+.sprite_bookmark_outline.on{
+
+}
 
 .animation-target {
     animation: animation 1000ms linear both;

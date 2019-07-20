@@ -3,7 +3,7 @@
 (function () {
 
 
-    const btn = document.querySelector('.heart_btn');
+    // const btn = document.querySelector('.heart_btn');
     const header = document.querySelector('#header');
     const side_box = document.querySelector('.side_box');
     const contents = document.querySelector('.contents_box');
@@ -16,11 +16,42 @@
         while (!elem.getAttribute('data-name')) {
             elem = elem.parentNode;
 
-            if (elem.nodeName == 'BODY') {
+            if (elem.nodeName === 'BODY') {
                 elem = null;
                 return;
             }
         }
+        //
+        // if(elem.hasAttribute('data-name','heartbeat')) {
+        //     console.log('하트');
+        //
+        // }else if(elem.hasAttribute('data-name','book-mark')){
+        //     console.log('북마크');
+        // }
+
+        if(elem.matches('[data-name="heartbeat"]')){
+
+
+            console.log('하트');
+
+
+        }else if(elem.matches('[data-name="book-mark"]')){
+
+
+            console.log('북마크');
+
+        }else if(elem.matches('[data-name="share"]')){
+
+
+            console.log('공유');
+        }else if(elem.matches('[data-name="more"]')){
+
+
+            console.log('더보기');
+        }
+        // console.log(elem);
+
+
 
         // console.log(elem.getAttribute('data-name') + 'clicked! ');
 
@@ -82,27 +113,22 @@
     window.addEventListener('resize',resizefunc);
 
 
-
     window.addEventListener('scroll',scrollfunc);
 
     contents.addEventListener('click', eventHandler);
 
-    btn.addEventListener('click', function () {
-        this.classList.toggle('on');
-    });
-
-
-
-
-    if (matchMedia("screen and (max-width: 1024px)").matches) {
-        // 1024px 이상에서 사용할 JavaScript
-
-
-    } else {
-        // 1024px 미만에서 사용할 JavaScript
-
-
-    }
+    //
+    //
+    //
+    // if (matchMedia("screen and (max-width: 1024px)").matches) {
+    //     // 1024px 이상에서 사용할 JavaScript
+    //
+    //
+    // } else {
+    //     // 1024px 미만에서 사용할 JavaScript
+    //
+    //
+    // }
 
 
 })();

@@ -27,15 +27,15 @@
     <title>instagram</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/new_post.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="shortcut icon" href="imgs/instagram.png">
+
 
 </head>
 <body>
 
 
 <section id="container">
-
 
     <header id="header">
         <section class="h_inner">
@@ -69,45 +69,81 @@
     </header>
 
 
-
     <div id="main_container">
 
-        <div class="post_form_container">
-            <form action="#" class="post_form">
-                <div class="title">
-                    NEW POST
-                </div>
-                <div class="preview">
-                    <div class="upload">
-                        <div class="post_btn">
-                            <div class="plus_icon">
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <p>포스트 이미지 추가</p>
-                        </div>
+        <section class="b_inner">
+
+            <div class="hori_cont">
+                <div class="profile_wrap">
+                    <div class="profile_img">
+                        <img src="imgs/kind-tiger.jpeg" alt="착한호랑이">
                     </div>
                 </div>
-                <p>
-                    <input type="file" name="photo" id="id_photo" required="required">
-                </p>
-                <p>
-                    <textarea name="content" id="text_field" cols="50" rows="5" placeholder="140자 까지 등록 가능합니다.
-#태그명 을 통해서 검색 태그를 등록할 수 있습니다.
-예시 : I # love # insta!"></textarea>
 
-                </p>
+                <div class="detail">
+                    <div class="top">
+                        <div class="user_name">KindTiger</div>
+                        <a href="#" class="profile_edit">프로필편집</a>
+                        <a href="#" class="logout">로그아웃</a>
+                    </div>
 
-            </form>
+                    <ul class="middle">
+                        <li>
+                            <span>게시물</span>
+                            3
+                        </li>
+                        <li>
+                            <span>팔로워</span>
+                            3
+                        </li>
+                        <li>
+                            <span>팔로우</span>
+                            3
+                        </li>
+                    </ul>
+                    <p class="about">
+                        <span class="nick_name">kindtigerrr</span>
+                    </p>
+                </div>
+            </div>
 
-        </div>
+            <div class="mylist_contents">
+                <div class="pic">
+                    <a href="#"><img src="imgs/img_section/img01.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"><img src="imgs/img_section/img02.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"> <img src="imgs/img_section/img03.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"> <img src="imgs/img_section/img03.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"> <img src="imgs/img_section/img03.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"> <img src="imgs/img_section/img03.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"> <img src="imgs/img_section/img03.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"> <img src="imgs/img_section/img03.png" alt=""></a>
+                </div>
+                <div class="pic">
+                    <a href="#"> <img src="imgs/img_section/img03.png" alt=""></a>
+                </div>
+            </div>
 
+        </section>
     </div>
 
 
 </section>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!--<script src="js/insta.js"></script>-->
+<script src="js/insta.js"></script>
 </body>
 </html>
