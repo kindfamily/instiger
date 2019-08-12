@@ -132,7 +132,7 @@
 }
 
 .sprite_heart_icon_outline.on{
-    background: url('../imgs/4f7ac8e0a402.png') no-repeat -26px -261px;
+    background: url('../imgs/background01.png') no-repeat -26px -261px;
     animation:heart_bounce 1s linear;
 }
 

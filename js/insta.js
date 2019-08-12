@@ -9,9 +9,16 @@
     const contents = document.querySelector('.contents_box');
 
 
+    // console.log(tapBtn);
+
+
+
+
+
 
     function eventHandler(e) {
         let elem = e.target;
+        console.log(elem);
 
         while (!elem.getAttribute('data-name')) {
             elem = elem.parentNode;
@@ -21,13 +28,7 @@
                 return;
             }
         }
-        //
-        // if(elem.hasAttribute('data-name','heartbeat')) {
-        //     console.log('하트');
-        //
-        // }else if(elem.hasAttribute('data-name','book-mark')){
-        //     console.log('북마크');
-        // }
+
 
         if(elem.matches('[data-name="heartbeat"]')){
 
@@ -63,20 +64,29 @@
 
         if (pageYOffset >= 10) {
             header.classList.add('on');
-            side_box.classList.add('on');
+
             resizefunc();
+
+
+            if(side_box){
+                side_box.classList.add('on');
+            }
+
 
         } else {
 
             header.classList.remove('on');
-            side_box.classList.remove('on');
 
-            // side_box.style.right = '0px';
-            side_box.removeAttribute('style');
 
+            if(side_box){
+                side_box.classList.remove('on');
+                side_box.removeAttribute('style');
+            }
             console.log('no func!');
 
         }
+
+
     }
 
 
@@ -90,7 +100,10 @@
 
             // console.log(window.innerWidth);
 
-            side_box.style.left =  calcWidth + "px";
+
+            if(side_box){
+                side_box.style.left =  calcWidth + "px";
+            }
 
         }
 
@@ -115,7 +128,12 @@
 
     window.addEventListener('scroll',scrollfunc);
 
-    contents.addEventListener('click', eventHandler);
+    if(contents){
+        contents.addEventListener('click', eventHandler);
+    }
+
+
+
 
     //
     //
