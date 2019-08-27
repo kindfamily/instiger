@@ -3,15 +3,10 @@
 (function () {
 
 
-    // const btn = document.querySelector('.heart_btn');
     const header = document.querySelector('#header');
     const side_box = document.querySelector('.side_box');
     const contents = document.querySelector('.contents_box');
-
-
-    // console.log(tapBtn);
-
-
+    const variableWidth = document.querySelectorAll('.contents_box .contents');
 
 
 
@@ -30,31 +25,23 @@
         }
 
 
-        if(elem.matches('[data-name="heartbeat"]')){
 
+        if(elem.matches('[data-name="heartbeat"]')){
 
             console.log('하트');
 
-
         }else if(elem.matches('[data-name="book-mark"]')){
-
 
             console.log('북마크');
 
         }else if(elem.matches('[data-name="share"]')){
 
-
             console.log('공유');
-        }else if(elem.matches('[data-name="more"]')){
 
+        }else if(elem.matches('[data-name="more"]')){
 
             console.log('더보기');
         }
-        // console.log(elem);
-
-
-
-        // console.log(elem.getAttribute('data-name') + 'clicked! ');
 
         elem.classList.toggle('on');
     }
@@ -108,13 +95,31 @@
         }
 
 
+        if (matchMedia("screen and (max-width: 800px)").matches) {
+            // 1024px 이하 사용할 JavaScript
 
+            console.log('1024');
+
+
+            for(let i=0; i < variableWidth.length; i++){
+
+                variableWidth[i].style.width = window.innerWidth-20 + 'px';
+            }
+
+
+        }
+
+
+        for(let i=0; i<variableWidth.length; i++){
+
+            if(window.innerWidth > 600){
+
+                variableWidth[i].removeAttribute('style');
+            }
+        }
 
     }
 
-
-
-    resizefunc();
 
 
     setTimeout(function(){
@@ -122,6 +127,7 @@
     },100);
 
 
+    resizefunc();
 
     window.addEventListener('resize',resizefunc);
 
@@ -131,22 +137,6 @@
     if(contents){
         contents.addEventListener('click', eventHandler);
     }
-
-
-
-
-    //
-    //
-    //
-    // if (matchMedia("screen and (max-width: 1024px)").matches) {
-    //     // 1024px 이상에서 사용할 JavaScript
-    //
-    //
-    // } else {
-    //     // 1024px 미만에서 사용할 JavaScript
-    //
-    //
-    // }
 
 
 })();

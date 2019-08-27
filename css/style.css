@@ -29,6 +29,7 @@
     cursor: pointer;
     padding: 5px 5px;
 }
+
 .user_container{
     display: flex;
     align-items: center;
@@ -90,6 +91,7 @@
 .user_container .country{
     font-size: 12px;
 }
+
 .contents .img_section{
     overflow: hidden;
 }
@@ -177,10 +179,10 @@
     font-size: 10px;
     letter-spacing: .2px;
     color:#999;
-
     border-bottom: 1px solid rgba(0,0,0,.0975);
     padding: 10px 20px;
 }
+
 
 .commit_field{
     min-height: 56px;
@@ -188,9 +190,6 @@
     position: relative;
 }
 
-input[type=text]::-ms-clear {
-    display:none;
-}
 
 
 .commit_field input{
@@ -423,6 +422,18 @@ input[type=text]::-ms-clear {
     width: 100%;
     height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
