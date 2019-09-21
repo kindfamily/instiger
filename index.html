@@ -2,482 +2,555 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Title</title>
 
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Facebook Meta Tags / 페이스북 오픈 그래프 -->
+    <meta property="og:url" content="http://kindtiger.dothome.co.kr/insta">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="instagram">
+    <meta property="og:description" content="instagram clone">
+    <meta property="og:image" content="http://kindtiger.dothome.co.kr/insta/imgs/instagram.jpeg">
+    .
+    <!-- Twitter Meta Tags / 트위터 -->
+    <meta name="twitter:card" content="instagram clone">
+    <meta name="twitter:title" content="instagram">
+    <meta name="twitter:description" content="instagram clone">
+    <meta name="twitter:image" content="http://kindtiger.dothome.co.kr/insta/imgs/instagram.jpeg">
+
+    <!-- Google / Search Engine Tags / 구글 검색 엔진 -->
+    <meta itemprop="name" content="instagram">
+    <meta itemprop="description" content="instagram clone">
+    <meta itemprop="image" content="http://kindtiger.dothome.co.kr/insta/imgs/instagram.jpeg">
+
+
+    <title>instagram</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" href="imgs/instagram.png">
 
 
+    <style>
+        #main_container {
+            /*height: 6000px;*/
+        }
+    </style>
 </head>
 <body>
 
 
-<section id="container">
-
-
-    <header id="header">
-        <section class="inner">
-
-            <h1 class="logo">
-                <a href="index.html">
-                    <div class="sprite_insta_icon"></div>
-                    <div class="sprite_write_logo"></div>
-                </a>
-            </h1>
-
-            <div class="search_box">
-                <input type="text" placeholder="검색" id="search-field">
-
-                <div class="fake_field">
-                    <span class="sprite_small_search_icon"></span>
-                    <span>검색</span>
+    <section id="container">
+        <header id="header" class="">
+            <section class="h_inner">
+    
+                <h1 class="logo">
+                    <a href="#">
+                        <div class="sprite_insta_icon"></div>
+                        <div>
+                            <div class="sprite_write_logo"></div>
+                        </div>
+                    </a>
+                </h1>
+                
+                
+            <!-- <form class="search-form" action="/post/" method="post">
+              <input type="hidden" name="csrfmiddlewaretoken" value="BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC">
+              <input class="tag-search" type="text" name="tag" placeholder="검색" pattern="#?[\wㄱ-ㅎ|ㅏ-ㅣ|가-힣]+" title="특수문자, 공백 입력불가" required >
+              
+              <span class="search-icon"></span>
+            </form>             -->
+    
+                <form class="search_field" action="/post/" method="post">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC">
+                    <input type="text" name="tag" placeholder="검색" pattern="#?[\wㄱ-ㅎ|ㅏ-ㅣ|가-힣]+" title="특수문자, 공백 입력불가" tabindex="0" required="">
+    
+                    <div class="fake_field">
+                        <span class="sprite_small_search_icon"></span>
+                        <span>검색</span>
+                    </div>
+                </form>
+    
+    
+                <div class="right_icons">
+                    <div class="sprite_camera_icon"><a href="new_post.html"></a></div>
+                    <div class="sprite_compass_icon"><a href="login.html"></a></div>
+                    <div class="sprite_heart_icon_outline"><a href="follow.html"></a></div>
+                    <a href="profile.html"><div class="sprite_user_icon_outline"></div></a>
                 </div>
-            </div>
-
-            <div class="right_icons">
-                <div class="sprite_camera_icon"></div>
-                <div class="sprite_compass_icon"></div>
-                <div class="sprite_heart_icon_outline"></div>
-                <div class="sprite_user_icon_outline"></div>
-            </div>
-
-        </section>
-
-    </header>
-
+            </section>
+        </header>
+        
+    
+    <!-- hidden -->
+    
+    
     <div class="hidden_menu">
         <div class="scroll_inner">
+            
             <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
+                <div class="thumb_img">
+                    <img src="./imgs/thumb.jpeg" alt="">
+                </div>
+                <div class="id">가즈아~</div>
             </div>
-
+            
             <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
+                <div class="thumb_img">
+                    <img src="./imgs/thumb02.jpg" alt="">
+                </div>
+                <div class="id">봉드가르드봉</div>
             </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-            <div class="user">
-                <div class="thumb_img"><img src="imgs/thumb.jpeg" alt="프로필사진"></div>
-                <div class="id">kindtigerrr</div>
-            </div>
-
+            
         </div>
     </div>
-
-
-    <section id="main_container">
-        <div class="inner">
-
+    
+    
+    
+    <!-- main  -->
+    <div id="main_container">
+        <section class="b_inner">
             <div class="contents_box">
-                <article class="contents">
+                <!--  post  -->
+                
+                <article class="contents cont01">
+                    <!-- js파일로 불러올때 쓸 csrf input 박스 -->
+                    <!-- <input type="hidden" id="csrf_token" value="BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC"> -->
+                    <!-- post > header -->
                     <header class="top">
                         <div class="user_container">
                             <div class="profile_img">
-                                <img src="imgs/thumb.jpeg" alt="프로필이미지">
+                                
+                                <img src="./imgs/thumb.jpeg" alt="">
+                                
                             </div>
                             <div class="user_name">
-                                <div class="nick_name m_text">KindTiger</div>
-                                <div class="country s_text">Seoul, South Korea</div>
+                                <div class="nick_name">가즈아~</div>
+                                <div class="country">Seoul, South Korea</div>
                             </div>
-
                         </div>
-
                         <div class="sprite_more_icon" data-name="more">
-                            <ul class="toggle_box">
-                               <li><input type="submit" class="follow" value="팔로우" data-name="follow"></li>
-                                <li>수정</li>
-                                <li>삭제</li>
+                            <ul class="more_detail">
+                                <li>
+                                    <span class="pull-right">                   
+                                    
+                                    <input class="follow following-btn" data-name="follow" type="submit" value="팔로잉" name="6" style="border:none; padding: 0px;">
+                                    
+                                    </span>
+                                </li>
+                                
                             </ul>
                         </div>
                     </header>
-
+    
+                    <!-- post > img -->
                     <div class="img_section">
                         <div class="trans_inner">
-                            <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
+                            <div><img src="./imgs/img_section/img03.jpg" alt="tuntunkimpo"></div>
                         </div>
                     </div>
-
+    
+                    <!-- post > button -->
                     <div class="bottom_icons">
                         <div class="left_icons">
                             <div class="heart_btn">
-                                <div class="sprite_heart_icon_outline" name="39" data-name="heartbeat"></div>
+                                
+                                <div class="like sprite_heart_icon_outline" name="27" data-name="heartbeat"></div>
+                                
                             </div>
-                            <div class="sprite_bubble_icon"></div>
-                            <div class="sprite_share_icon" data-name="share"></div>
+                            <div>
+                                <a href="detail-page.html">
+                                    <div class="sprite_bubble_icon"></div>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="sprite_share_icon" data-name="share"></div>
+                            </div>
                         </div>
+    
                         <div class="right_icon">
-                            <div class="sprite_bookmark_outline" data-name="bookmark"></div>
+                            
+                            <div class="bookmark sprite_bookmark_outline on" name="27" data-name="book-mark"></div>
+                            
                         </div>
                     </div>
-
-                    <div class="likes m_text">
-                        좋아요
-                        <span id="like-count-39">2,346</span>
-                        개
+    
+                    <!-- post > like&bookmark count -->
+                    <div class="count_container">
+                        <p class="like count_likes" id="like-count-27"><span>좋아요 1개</span>
+                        </p>
+                        <p class="bookmark-count count_bookmark" id="bookmark-count-27"><span>북마크 2개</span>
+                        </p>
                     </div>
-
-                    <div class="comment_container">
-                        <div class="comment" id="comment-list-ajax-post37">
-                            <div class="comment-detail">
-                                <div class="nick_name m_text">dongdong2</div>
-                                <div>강아지가 너무 귀여워요~!</div>
-                            </div>
-                        </div>
-                        <div class="small_heart">
-                            <div class="sprite_small_heart_icon_outline"></div>
-                        </div>
-                    </div>
-
-                    <div class="timer">1시간 전</div>
-
-                    <div class="comment_field" id="add-comment-post37">
-                        <input type="text" placeholder="댓글달기...">
-                        <div class="upload_btn m_text" data-name="comment">게시</div>
-                    </div>
-                </article>
-                <article class="contents">
-                    <header class="top">
-                        <div class="user_container">
-                            <div class="profile_img">
-                                <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                            </div>
-                            <div class="user_name">
-                                <div class="nick_name m_text">KindTiger</div>
-                                <div class="country s_text">Seoul, South Korea</div>
-                            </div>
-
-                        </div>
-
-                        <div class="sprite_more_icon" data-name="more">
-                            <ul class="toggle_box">
-                                <li><input type="submit" class="follow" value="팔로우" data-name="follow"></li>
-                                <li>수정</li>
-                                <li>삭제</li>
-                            </ul>
-                        </div>
-                    </header>
-
-                    <div class="img_section">
-                        <div class="trans_inner">
-                            <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
+    
+                    <div class="content">tuntunkimpo 가즈아가 작성했습니다</div>
+                    <!-- post 인스턴스 객체에 'add_link' 사용자정의 필터를 적용하였다 -->
+                    <!-- 참고) 내장 필터인 safe 필터를 사용하여, tag escape를 방지할 수 있다. -->
+                    <!-- linebreaksbr 줄바꿈 -->
+                    <div class="commet_container">
+                        <div id="comment-list-ajax-post27">
+                            
                         </div>
                     </div>
-
-                    <div class="bottom_icons">
-                        <div class="left_icons">
-                            <div class="heart_btn">
-                                <div class="sprite_heart_icon_outline" name="39" data-name="heartbeat"></div>
-                            </div>
-                            <div class="sprite_bubble_icon"></div>
-                            <div class="sprite_share_icon" data-name="share"></div>
-                        </div>
-                        <div class="right_icon">
-                            <div class="sprite_bookmark_outline" data-name="bookmark"></div>
-                        </div>
-                    </div>
-
-                    <div class="likes m_text">
-                        좋아요
-                        <span id="like-count-39">2,346</span>
-                        개
-                    </div>
-
-                    <div class="comment_container">
-                        <div class="comment" id="comment-list-ajax-post37">
-                            <div class="comment-detail">
-                                <div class="nick_name m_text">dongdong2</div>
-                                <div>강아지가 너무 귀여워요~!</div>
-                            </div>
-                        </div>
-                        <div class="small_heart">
-                            <div class="sprite_small_heart_icon_outline"></div>
-                        </div>
-                    </div>
-
-                    <div class="timer">1시간 전</div>
-
-                    <div class="comment_field" id="add-comment-post37">
-                        <input type="text" placeholder="댓글달기...">
-                        <div class="upload_btn m_text" data-name="comment">게시</div>
-                    </div>
-                </article>
-                <article class="contents">
-                    <header class="top">
-                        <div class="user_container">
-                            <div class="profile_img">
-                                <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                            </div>
-                            <div class="user_name">
-                                <div class="nick_name m_text">KindTiger</div>
-                                <div class="country s_text">Seoul, South Korea</div>
-                            </div>
-
-                        </div>
-
-                        <div class="sprite_more_icon" data-name="more">
-                            <ul class="toggle_box">
-                                <li><input type="submit" class="follow" value="팔로우" data-name="follow"></li>
-                                <li>수정</li>
-                                <li>삭제</li>
-                            </ul>
-                        </div>
-                    </header>
-
-                    <div class="img_section">
-                        <div class="trans_inner">
-                            <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                        </div>
-                    </div>
-
-                    <div class="bottom_icons">
-                        <div class="left_icons">
-                            <div class="heart_btn">
-                                <div class="sprite_heart_icon_outline" name="39" data-name="heartbeat"></div>
-                            </div>
-                            <div class="sprite_bubble_icon"></div>
-                            <div class="sprite_share_icon" data-name="share"></div>
-                        </div>
-                        <div class="right_icon">
-                            <div class="sprite_bookmark_outline" data-name="bookmark"></div>
-                        </div>
-                    </div>
-
-                    <div class="likes m_text">
-                        좋아요
-                        <span id="like-count-39">2,346</span>
-                        개
-                    </div>
-
-                    <div class="comment_container">
-                        <div class="comment" id="comment-list-ajax-post37">
-                            <div class="comment-detail">
-                                <div class="nick_name m_text">dongdong2</div>
-                                <div>강아지가 너무 귀여워요~!</div>
-                            </div>
-                        </div>
-                        <div class="small_heart">
-                            <div class="sprite_small_heart_icon_outline"></div>
-                        </div>
-                    </div>
-
-                    <div class="timer">1시간 전</div>
-
-                    <div class="comment_field" id="add-comment-post37">
-                        <input type="text" placeholder="댓글달기...">
-                        <div class="upload_btn m_text" data-name="comment">게시</div>
-                    </div>
-                </article>
-                <article class="contents">
-                    <header class="top">
-                        <div class="user_container">
-                            <div class="profile_img">
-                                <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                            </div>
-                            <div class="user_name">
-                                <div class="nick_name m_text">KindTiger</div>
-                                <div class="country s_text">Seoul, South Korea</div>
-                            </div>
-
-                        </div>
-
-                        <div class="sprite_more_icon" data-name="more">
-                            <ul class="toggle_box">
-                                <li><input type="submit" class="follow" value="팔로우" data-name="follow"></li>
-                                <li>수정</li>
-                                <li>삭제</li>
-                            </ul>
-                        </div>
-                    </header>
-
-                    <div class="img_section">
-                        <div class="trans_inner">
-                            <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                        </div>
-                    </div>
-
-                    <div class="bottom_icons">
-                        <div class="left_icons">
-                            <div class="heart_btn">
-                                <div class="sprite_heart_icon_outline" name="39" data-name="heartbeat"></div>
-                            </div>
-                            <div class="sprite_bubble_icon"></div>
-                            <div class="sprite_share_icon" data-name="share"></div>
-                        </div>
-                        <div class="right_icon">
-                            <div class="sprite_bookmark_outline" data-name="bookmark"></div>
-                        </div>
-                    </div>
-
-                    <div class="likes m_text">
-                        좋아요
-                        <span id="like-count-39">2,346</span>
-                        개
-                    </div>
-
-                    <div class="comment_container">
-                        <div class="comment" id="comment-list-ajax-post37">
-                            <div class="comment-detail">
-                                <div class="nick_name m_text">dongdong2</div>
-                                <div>강아지가 너무 귀여워요~!</div>
-                            </div>
-                        </div>
-                        <div class="small_heart">
-                            <div class="sprite_small_heart_icon_outline"></div>
-                        </div>
-                    </div>
-
-                    <div class="timer">1시간 전</div>
-
-                    <div class="comment_field" id="add-comment-post37">
-                        <input type="text" placeholder="댓글달기...">
-                        <div class="upload_btn m_text" data-name="comment">게시</div>
-                    </div>
-                </article>
-
-
-
+    
+                    <!-- post > timer -->
+                    <div class="timer">3주, 5일</div>
+    
+                    <!-- post > comment -->
+                    <div id="add-comment-post27" class="add-comment-wrap">
+                        
+                        <input type="text" name="content" class="comment-form" size="70px" placeholder="댓글 달기..." maxlength="40" required="" id="id_content">
+                        <input type="button" class="add-comment add-comment-btn" data-name="comment" name="27" value="게시">
+                        
+                        <!-- <div id="add-comment-post27" class="commit_field add-comment-wrap">
+                                
+                                  <input type="text" name="content" class="comment-form" size="70px" placeholder="댓글 달기..." maxlength="40" required="" id="id_content">
+                                  <button class="upload_btn add-comment add-comment-btn" name="27" >게시</button>
+                                
+                            </div> -->
+    
+                </div></article>
+                
+                <div id="post_list_ajax"></div>
+                <input id="page" type="hidden" value="2">
             </div>
-            <input type="hidden" id="page" value="1">
-
-            <div class="side_box">
+    
+    
+            <!-- side_box -->
+            <div class="side_box" style="">
+                <!-- side_box > profile -->
+                
                 <div class="user_profile">
                     <div class="profile_thumb">
-                        <img src="imgs/thumb.jpeg" alt="프로필사진">
+                        <img src="./imgs/thumb03.jpg" alt="">
                     </div>
                     <div class="detail">
-                        <div class="id m_text">KindTiger</div>
-                        <div class="ko_name">심선범</div>
+                        <div class="id">bill</div>
+                        <div class="ko_id">봉드가르드봉</div>
                     </div>
                 </div>
-
-                <article class="story">
+                
+                <!-- side_box > story -->
+                <article class="story_box">
                     <header class="story_header">
                         <div>스토리</div>
                         <div class="more">모두 보기</div>
                     </header>
-
                     <div class="scroll_inner">
-                        <div class="thumb_user">
-                            <div class="profile_thumb">
-                                <img src="imgs/thumb02.jpg" alt="프로필사진">
+                        
+                            
+                            <div class="thumb_user">
+                                <div class="profile_thumb">
+                                    <img src="./imgs/thumb02.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <div class="timer">tuntunkimpo 가즈아가 작성했습니다</div>
+                                    <div class="timer">3주, 5일</div>
+                                </div>
                             </div>
-                            <div class="detail">
-                                <div class="id">kind_tigerrrr</div>
-                                <div class="time">1시간 전</div>
-                            </div>
-                        </div>
-                        <div class="thumb_user">
-                            <div class="profile_thumb">
-                                <img src="imgs/thumb02.jpg" alt="프로필사진">
-                            </div>
-                            <div class="detail">
-                                <div class="id">kind_tigerrrr</div>
-                                <div class="time">1시간 전</div>
-                            </div>
-                        </div>
-                        <div class="thumb_user">
-                            <div class="profile_thumb">
-                                <img src="imgs/thumb02.jpg" alt="프로필사진">
-                            </div>
-                            <div class="detail">
-                                <div class="id">kind_tigerrrr</div>
-                                <div class="time">1시간 전</div>
-                            </div>
-                        </div>
-                        <div class="thumb_user">
-                            <div class="profile_thumb">
-                                <img src="imgs/thumb02.jpg" alt="프로필사진">
-                            </div>
-                            <div class="detail">
-                                <div class="id">kind_tigerrrr</div>
-                                <div class="time">1시간 전</div>
-                            </div>
-                        </div>
-                        <div class="thumb_user">
-                            <div class="profile_thumb">
-                                <img src="imgs/thumb02.jpg" alt="프로필사진">
-                            </div>
-                            <div class="detail">
-                                <div class="id">kind_tigerrrr</div>
-                                <div class="time">1시간 전</div>
-                            </div>
-                        </div>
+                            
                     </div>
-                </article>
+    
+                         
+            </article>
 
-                <article class="recommend">
-                    <header class="reco_header">
-                        <div>회원님을 위한 추천</div>
-                        <div class="more">모두 보기</div>
-                    </header>
 
-                    <div class="thumb_user">
-                        <div class="profile_thumb">
-                            <img src="imgs/thumb02.jpg" alt="프로필사진">
-                        </div>
-                        <div class="detail">
-                            <div class="id">kind_tigerrrr</div>
-                            <div class="time">1시간 전</div>
-                        </div>
+            
+    
+            <!-- side_box > 추천 -->
+            <article class="recommend">
+                <header class="recommend_header">
+                    <div>회원님을 위한 추천</div>
+                    <div class="more">모두 보기</div>
+                </header>
+                <div class="thumb_user">
+                    <div class="profile_thumb">
+                        <img src="./imgs/thumb02.jpg" alt="">
                     </div>
-                    <div class="thumb_user">
-                        <div class="profile_thumb">
-                            <img src="imgs/thumb02.jpg" alt="프로필사진">
-                        </div>
-                        <div class="detail">
-                            <div class="id">kind_tigerrrr</div>
-                            <div class="time">1시간 전</div>
-                        </div>
+                    <div class="detail">
+                        <div class="timer">1시간전</div>
                     </div>
-                </article>
-            </div>
-
-
-        </div>
+                </div>
+                
+            </article>
+    </div>
+    </section>
+    </div>
+    
+    <!-- event delegate&ajax -->
+    <script type="text/javascript">
+     (function () {
+        const header = document.querySelector('#header');
+        const side_box = document.querySelector('.side_box');
+        const contents = document.querySelector('.contents_box');
+        const csrf_token = document.getElementById('csrf_token');
+        
+        function eventHandler(e) {
+            let elem = e.target;
+    
+    
+            while (!elem.getAttribute('data-name')) {
+                elem = elem.parentNode;
+    
+                if (elem.nodeName === 'BODY') {
+                    elem = null;
+                    return;
+                }
+            }
+            
+            if(elem.matches('[data-name="heartbeat"]')){ 
+                
+                console.log('hit')
+    
+                var pk = elem.getAttribute('name');
+    
+    
+    
+                $.ajax({
+                  type: "POST",
+                  url: "/post/like",
+                  data: {'pk': pk, 'csrfmiddlewaretoken': 'BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC' },
+                  dataType: "json",
+                  success: function(response){
+    
+                    var likeCount = document.querySelector('#like-count-'+pk);
+                    likeCount.innerHTML = '좋아요'+response.like_count+'개';
+    
+                  },
+                  error: function(request, status, error){
+                    alert("로그인이 필요합니다.");
+                    window.location.replace("/accounts/login/");
+                  },
+    
+                });
+    
+            }
+            
+            
+            if(elem.matches('[data-name="book-mark"]')){
+                var pk = elem.getAttribute('name');
+                $.ajax({
+                  type: "POST",
+                  url: "/post/bookmark",
+                  data: {'pk': pk, 'csrfmiddlewaretoken': 'BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC' },
+                  dataType: "json",
+                  success: function(response){
+    
+                    var bookmarkCount = document.querySelector('#bookmark-count-'+pk);
+                    bookmarkCount.innerHTML = '북마크'+response.bookmark_count+'개';
+    
+                  },
+                  error: function(request, status, error){ 
+                    // alert("실패");
+                    alert("로그인이 필요합니다.");
+                    window.location.replace("/accounts/login/");
+                  },
+                });
+                
+                
+    
+            }
+            
+            if(elem.matches('[data-name="comment"]')){
+                var pk = elem.getAttribute('name');
+    
+                var content = document.querySelector('#add-comment-post'+pk+'>input[type=text]').value;
+    
+    console.log(content)
+    
+                if(content.length > 140){
+                  alert("댓글은 최대 140자 입력 가능합니다. 현재 글자수 :"+content.length);
+                  return;
+                }
+    
+                $.ajax({
+                  type: "POST",
+                  url: "/post/comment/new",
+                  data: {
+                    'pk': pk,
+                    'content':content,
+                    'csrfmiddlewaretoken': 'BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC',
+                  },
+                  dataType: "html",
+                  success: function(data, textStatus, jqXHR){
+                    document.querySelector("#comment-list-ajax-post"+pk).insertAdjacentHTML("afterbegin", data);
+                  },
+                  error: function(request, status, error){
+                    alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+                    alert("문제가 발생했습니다.");
+                  },
+                });
+    
+    
+                document.querySelector('#add-comment-post37>input[type=text]').value = '';
+            }
+            if(elem.matches('[data-name="comment_delete"]')){
+                
+                var pk = elem.getAttribute('name');
+    
+                    $.ajax({
+                      type: "POST",
+                      url: "/post/comment/delete",
+                      data: {
+                        'pk': pk,
+                        'csrfmiddlewaretoken': 'BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC',
+                      },
+                      dataType: "json",
+                      success: function(response){
+                        if(response.status){
+    
+                      document.querySelector('#comment'+pk).remove();
+    
+                        }
+                      },
+                      error: function(request, status, error){
+                        alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+                        alert("문제가 발생했습니다.");
+                      },
+                    });
+                
+            }
+            
+             if(elem.matches('[data-name="follow"]')){
+                
+             var pk = elem.getAttribute('name');
+                  $.ajax({
+                    type: "POST",
+                    url: "/accounts/follow/",
+                    data: {
+                      'pk': pk,
+                      'csrfmiddlewaretoken': 'BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC',
+                    },
+                    dataType: "json",
+                    success: function(response){
+                      // alert(response.message);
+                      if(response.status){
+                        document.querySelector('input.follow[name=\''+pk+'\']').value="팔로잉";
+                 
+                      }else{
+                        document.querySelector('input.follow[name=\''+pk+'\']').value="팔로우";
+          
+                      }
+                    },
+                    error: function(request, status, error){
+                      alert("로그인이 필요합니다.");
+                      window.location.replace("/accounts/login/");
+         
+                    }
+                  })
+                
+            }
+            
+            elem.classList.toggle('on');
+        }
+    
+    
+    
+        function resizefunc(){
+            if(pageYOffset >= 10){
+                let calcWidth = (window.innerWidth * 0.5) + 167;
+                // console.log(window.innerWidth);
+                if(side_box){
+                    side_box.style.left =  calcWidth + "px";
+                }
+            }
+        }
+    
+         function scrollfunc(){
+             var scrollHeight = pageYOffset + window.innerHeight;
+             var documentHeight = document.body.scrollHeight;
+             
+            if (pageYOffset >= 10) {
+                header.classList.add('on');
+                resizefunc();
+                if(side_box){
+                    side_box.classList.add('on');
+                }
+            } else {
+                header.classList.remove('on');
+                if(side_box){
+                    side_box.classList.remove('on');
+                    side_box.removeAttribute('style');
+                }
+                console.log('no func!');
+            }
+             
+    
+            console.log('scrollHeight : '+scrollHeight);
+            console.log('documentHeight : ' +documentHeight);
+    
+    //          -----------------무한 스크롤 
+            if (scrollHeight  >= documentHeight){
+              var page = document.querySelector('#page').value;
+              var end_page = 1;
+              if(page > end_page){
+                return;
+              }
+              document.querySelector('#page').value = parseInt(page) + 1;
+              callMorePostAjax(page);
+    
+            }
+        }
+    
+         
+             
+        
+      function callMorePostAjax(page) {
+        var end_page = 1;
+        if(page > end_page){
+          return;
+        }
+        $.ajax({
+          type : 'POST',
+          
+          url: "/post/",
+          
+          data: {
+            'page': page,
+            'csrfmiddlewaretoken': 'BOAt421m9JBmpKRuxlfdLTfb0f51ISHTE4F1rTXxz781JTfI6SkXXeb7CoWXTMlC'
+          },
+          success: addMorePostAjax,
+          dataType: 'html',
+          error: function(request, status, error){
+            alert('오류발생');
+            // alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+          },
+        });
+      }
+      
+      function addMorePostAjax(data, textStatus, jqXHR) {
+      let post = document.querySelector('#post_list_ajax');
+    
+        post.insertAdjacentHTML("beforeend", data);
+      }
+    
+        resizefunc();
+    
+        setTimeout(function(){
+            scrollTo(0,0);
+        },300);
+    
+        window.addEventListener('resize',resizefunc);
+        window.addEventListener('scroll',scrollfunc);
+        if(contents){
+            contents.addEventListener('click', eventHandler);
+        }
+    })();   
+        
+    
+    
+    </script>
+    
+    
     </section>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/rander_page.js"></script>
+<script src="js/insta.js"></script>
 
 
-</section>
-
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
